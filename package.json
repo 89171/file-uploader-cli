@@ -1,0 +1,31 @@
+{
+  "name": "typora-img-uploader",
+  "version": "1.0.0",
+  "description": "Upload images automatically in typroa",
+  "main": "index.js",
+  "bin": {
+      "ftp-uploader": "./lib/ftp.js",
+      "ali-oss": "./lib/oss.js",
+      "tiu": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamxiaozhu/typora-img-uploader.git"
+  },
+  "keywords": [
+    "typora",
+    "upload",
+    "image",
+    "picture",
+    "auto"
+  ],
+  "author": "891715824@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamxiaozhu/typora-img-uploader/issues"
+  },
+  "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme"
+}
