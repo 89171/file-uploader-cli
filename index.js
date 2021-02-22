@@ -1,16 +1,22 @@
 #!/usr/bin/env node
 const { program } = require('commander')
-// const helpOptions = require('./lib/core/help')
+const helpOptions = require('./lib/core/help')
+const fs = require('fs')
+const path = require('path')
 const { useTypeAction } = require('./lib/core/actions')
+const generateConfig = require('./lib/core/generateConfig')
 const pkg = require('./package.json')
 
-// helpOptions()
+helpOptions()
 
 program
-    .option('-s --serve <type>','serve to be used, enum: github | ali-oss | qiniu | ftp', useTypeAction)
-    .option('-d --default <default>', 'default')
     .version(pkg.version)
     .parse(process.argv);
 
-const options = program.opts();
-console.log(options);
+const config = generateConfig()
+const { type } = program.opts()
+if(['github','ali-oss','qiniu','ftp'].indexOf(type) > -1){
+    require(`./lib/${type}`)(config,program.args)
+}
+console.log(config)
+console.log(program.args)

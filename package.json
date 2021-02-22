@@ -4,9 +4,9 @@
   "description": "Upload images automatically in typroa",
   "main": "index.js",
   "bin": {
-      "ftp-uploader": "./lib/ftp.js",
-      "ali-oss": "./lib/oss.js",
-      "tiu": "./index.js"
+    "ftp-uploader": "./lib/ftp.js",
+    "ali-oss": "./lib/oss.js",
+    "tiu": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/Iamxiaozhu/typora-img-uploader/issues"
   },
-  "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme"
+  "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme",
+  "dependencies": {
+    "ali-oss": "^6.13.2",
+    "octonode": "^0.10.0",
+    "qiniu": "^7.3.2",
+    "sharp": "^0.27.1"
+  }
 }
