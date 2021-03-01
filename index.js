@@ -3,18 +3,25 @@ const { program } = require('commander')
 const helpOptions = require('./lib/core/help')
 const generateConfig = require('./lib/core/generateConfig')
 const pkg = require('./package.json')
-const { configCommand } = require('./lib/core/command')
+const configOperate = require('./lib/core/configOperate')
+const { readConfig, absolutePath } = require('./lib/util')
 
 helpOptions()
-configCommand()
 
 program
     .version(pkg.version)
     .parse(process.argv);
 
+configOperate()
 
 const config = generateConfig()
-const { type } = program.opts()
+const options = program.opts()
+const type = options['type'] || readConfig()['default']
 if(['github','ali-oss','qiniu','ftp'].indexOf(type) > -1){
-    require(`./lib/${type}`)(config,program.args)
+    if(options.length === 0 && program.args.length === 0){
+        console.log('please specify the file to upload')
+        return
+    }
+    const fileList = absolutePath(program.args)
+    fileList.length > 0 && require(`./lib/${type}`)(config,fileList)
 }

@@ -1,17 +1,18 @@
 {
-  "name": "typora-img-uploader",
+  "name": "file-uploader-cli",
   "version": "1.0.0",
   "description": "Upload images automatically in typroa",
   "main": "index.js",
   "bin": {
-    "tiu": "index.js"
+    "fuc": "index.js",
+    "file-uploader-cli": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Iamxiaozhu/typora-img-uploader.git"
+    "url": "git+https://github.com/Iamxiaozhu/file-uploader-cli.git"
   },
   "keywords": [
     "typora",
@@ -28,6 +29,7 @@
   "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme",
   "dependencies": {
     "ali-oss": "^6.13.2",
+    "ftp": "^0.3.10",
     "octonode": "^0.10.0",
     "qiniu": "^7.3.2",
     "sharp": "^0.27.1"
