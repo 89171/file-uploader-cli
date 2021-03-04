@@ -182,17 +182,53 @@ fuc xxx.jpg xxx.js
 >
 > 尽量使用最小权限: 对象存储服务使用子账户并为秘钥分配指定的权限
 
-#### 支持选项
+#### 其他选项
 
 ```bash
+fuc -h
+```
+```bash
+Usage: fuc [options]
 
+Options:
+  -t --type <type>      type to be used, enum: github | ali-oss | qiniu | ftp | cos | jdcloud
+  -d --default          set as default type
+  -c --config <config>  specify the current configuration
+  -l --list             view configuration list
+  -r --remove           remove configuration
+  -V, --version         output the version number
+  -h, --help            display help for command
+
+view configuration:
+    $ fuc -l
+    $ fuc -l -t github | ali-oss | qiniu | ftp | cos | jdcloud
+remove configuration:
+    $ fuc -r
+    $ fuc -r -t github | ali-oss | qiniu | ftp | cos | jdcloud
 ```
 
-
-
-
-
 #### 在Typora中使用
+
+**macOS**
+
+```bash
+#全局安装
+npm install -g file-uploader-cli
+#查看link所在地址
+which fuc
+```
+
+复制路径并填写到Typora>Preferences(偏好设置)>Image(图像)>Command(命令)中，点击Test Uploader(验证图片上传选项)进行测试
+
+> Tip：设置上面的操作中Image(图片)的When Insert参数为Upload image, 当插入本地或者剪切板中图片时就会自动上传并替换为网络图片
+
+**Windows**
+
+
+
+> Tip: 关于Typora主题，我们也可以定制自己的样式, Preferences(偏好设置)>Appearance(外观)>Theme(主题)>Open Theme Folder(打开主题文件夹), 在theme目录创建我们自己的css文件并编辑样式，重新打开Typora之后我们就可以在主题中选择自己定义的主题了。
+>
+> 勾选General(通用)>Advanced Settings(高级设置)>Enable Debug(开启调试模式)之后，右键菜单会有“检查元素”的选项，可以更方便的调试样式
 
 
 
