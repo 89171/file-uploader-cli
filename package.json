@@ -1,7 +1,7 @@
 {
   "name": "file-uploader-cli",
   "version": "1.0.0",
-  "description": "Upload images automatically in typroa",
+  "description": "Upload files from the command line",
   "main": "index.js",
   "bin": {
     "fuc": "index.js",
@@ -19,7 +19,8 @@
     "upload",
     "image",
     "picture",
-    "auto"
+    "auto",
+    "cli"
   ],
   "author": "891715824@qq.com",
   "license": "ISC",
