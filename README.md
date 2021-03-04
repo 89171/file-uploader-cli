@@ -73,7 +73,7 @@ fuc xxx.jpg xxx.js
 
 ``quality`` 0-100  webp图片压缩质量, 默认为75
 
-**github **
+**github**
 
 ```json
 {
