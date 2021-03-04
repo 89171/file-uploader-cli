@@ -1,6 +1,4 @@
-### file-uploader-cli
-
----
+# file-uploader-cli
 
 通过命令行上传文件，可以方便的在Typora中使用。
 
