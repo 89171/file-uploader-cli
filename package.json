@@ -29,7 +29,12 @@
   "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme",
   "dependencies": {
     "ali-oss": "^6.13.2",
+    "aws-sdk": "^2.854.0",
+    "cos-nodejs-sdk-v5": "^2.9.9",
+    "es6-promisify": "^6.1.1",
+    "file-type": "^16.2.0",
     "ftp": "^0.3.10",
+    "mime-types": "^2.1.29",
     "octonode": "^0.10.0",
     "qiniu": "^7.3.2",
     "sharp": "^0.27.1"

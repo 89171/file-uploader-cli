@@ -4,7 +4,7 @@ const helpOptions = require('./lib/core/help')
 const generateConfig = require('./lib/core/generateConfig')
 const pkg = require('./package.json')
 const configOperate = require('./lib/core/configOperate')
-const { readConfig, absolutePath } = require('./lib/util')
+const { readConfig, absolutePath, supportList } = require('./lib/util')
 
 helpOptions()
 
@@ -17,7 +17,7 @@ configOperate()
 const config = generateConfig()
 const options = program.opts()
 const type = options['type'] || readConfig()['default']
-if(['github','ali-oss','qiniu','ftp'].indexOf(type) > -1){
+if(supportList.indexOf(type) > -1){
     if(options.length === 0 && program.args.length === 0){
         console.log('please specify the file to upload')
         return
