@@ -31,6 +31,7 @@
   "dependencies": {
     "ali-oss": "^6.13.2",
     "aws-sdk": "^2.854.0",
+    "commander": "^7.1.0",
     "cos-nodejs-sdk-v5": "^2.9.9",
     "file-type": "^16.2.0",
     "ftp": "^0.3.10",
