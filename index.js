@@ -23,5 +23,9 @@ if(supportList.indexOf(type) > -1){
         return
     }
     const fileList = absolutePath(program.args)
+    if(fileList.length > 0 && (!config || Object.keys(config).length === 0)){
+        console.log("can't find configuration")
+        return
+    }
     fileList.length > 0 && require(`./lib/${type}`)(config,fileList)
 }

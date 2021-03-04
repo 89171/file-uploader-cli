@@ -20,13 +20,13 @@
 
 
 
-##### 安装
+#### 安装
 
 ```bash
 npm install -g file-uploader-cli
 ```
 
-##### 通过json文件导入配置
+#### 通过json文件导入配置
 
 通过-t 指定配置类型，枚举值: github, ali-oss, qiniu, cos, jdcloud, ftp
 
@@ -47,7 +47,7 @@ fuc -d -t ali-oss
 fuc -dt ali-oss
 ```
 
-##### 使用方式
+#### 使用方式
 
 可以同时上传多个文件，暂不支持上传目录
 
@@ -58,7 +58,7 @@ fuc xxx.png
 fuc xxx.jpg xxx.js
 ```
 
-##### 配置
+#### 配置
 
 可以将对应的服务放到一个JSON文件中进行配置
 
