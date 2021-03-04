@@ -1,10 +1,11 @@
 # file-uploader-cli
 
 通过命令行上传文件，可以用做图床上传工具，也可以方便的在Typora中使用。
+![](https://cdn.jsdelivr.net/gh/Iamxiaozhu/file-uploader-cli/test.svg)
 
 支持以下服务: 
 
-``github ``上传到GitHub Pages或者公共仓库(推荐使用)
+``github ``上传到GitHub Pages或者公共仓库(推荐搭配 **jsDelivr** 使用)
 
 ``ali-oss`` 阿里云对象存储
 
