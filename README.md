@@ -225,9 +225,7 @@ which fuc
 
 **Windows**
 
-和macOS不同, 我们不需要使用软连接地址，可以直接在Command(命令)中填入fuc
-
-> 如果
+和macOS不同, 我们不需要使用软连接地址，可以直接在Command(命令)中填入'fuc'
 
 **其他**
 
