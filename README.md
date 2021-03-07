@@ -86,7 +86,7 @@ fuc xxx.jpg xxx.js
 }
 ```
 
-``token`` GitHub token
+``token`` 有repo权限的GitHub token(settings=>Developer settings=>Personal access tokens=>Generate new token)
 
 ``user`` GitHub用户名
 
@@ -213,23 +213,27 @@ remove configuration:
 **macOS**
 
 ```bash
-#全局安装
+# 1.全局安装
 npm install -g file-uploader-cli
-#查看link所在地址
+# 2.查看link所在地址
 which fuc
 ```
 
-复制路径并填写到Typora>Preferences(偏好设置)>Image(图像)>Command(命令)中，点击Test Uploader(验证图片上传选项)进行测试
+复制路径并填写到Typora>Preferences(偏好设置)>Image(图像)>Command(命令)中，选择Image Uploader(上传服务)为Custom Command, 点击Test Uploader(验证图片上传选项)进行测试
 
-> Tip：设置上面的操作中Image(图片)的When Insert参数为Upload image, 当插入本地或者剪切板中图片时就会自动上传并替换为网络图片
+> Tip：设置上面的操作中Image(图片)的When Insert(插入图片时)参数为Upload image(上传), 当插入本地或者剪切板中图片时就会自动上传并替换为网络图片
 
 **Windows**
 
+和macOS不同, 我们不需要使用软连接地址，可以直接在Command(命令)中填入fuc
 
+> 如果
+
+**其他**
 
 > Tip: 关于Typora主题，我们也可以定制自己的样式, Preferences(偏好设置)>Appearance(外观)>Theme(主题)>Open Theme Folder(打开主题文件夹), 在theme目录创建我们自己的css文件并编辑样式，重新打开Typora之后我们就可以在主题中选择自己定义的主题了。
 >
-> 勾选General(通用)>Advanced Settings(高级设置)>Enable Debug(开启调试模式)之后，右键菜单会有“检查元素”的选项，可以更方便的调试样式
+> 勾选General(通用)>Advanced Settings(高级设置)>Enable Debug(开启调试模式)之后，右键菜单会有“(Inspect Element)检查元素”的选项，可以更方便的调试样式
 
 
 
