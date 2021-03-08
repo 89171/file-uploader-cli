@@ -209,6 +209,10 @@ remove configuration:
 ```
 
 #### 在Typora中使用
+**为什么使用file-uploader-cli作为Typora图片上传服务**
+- 安装简便，只需执行npm安装命令，无需安装其他软件(依赖Node.js)
+- 跨平台，可以在macOS和Windows无差异使用
+- 隐私安全，所有数据存储在本地
 
 **macOS**
 
