@@ -1,6 +1,6 @@
 # file-uploader-cli
 
-通过命令行上传文件，可以用做图床上传工具，也可以方便的在Typora中使用。
+通过命令行上传文件，可以用做图床上传工具，也可以方便的[在Typora中使用](https://github.com/Iamxiaozhu/file-uploader-cli#%E5%9C%A8typora%E4%B8%AD%E4%BD%BF%E7%94%A8)。
 ![](https://cdn.jsdelivr.net/gh/Iamxiaozhu/file-uploader-cli/test.svg)
 
 支持以下服务: 
