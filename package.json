@@ -25,9 +25,9 @@
   "author": "891715824@qq.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Iamxiaozhu/typora-img-uploader/issues"
+    "url": "https://github.com/Iamxiaozhu/file-uploader-cli/issues"
   },
-  "homepage": "https://github.com/Iamxiaozhu/typora-img-uploader#readme",
+  "homepage": "https://github.com/Iamxiaozhu/file-uploader-cli#readme",
   "dependencies": {
     "ali-oss": "^6.13.2",
     "aws-sdk": "^2.854.0",
