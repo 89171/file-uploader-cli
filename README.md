@@ -6,7 +6,7 @@
 
 支持以下服务: 
 
-``github ``上传到GitHub Pages或者公共仓库(推荐搭配 **jsDelivr** 使用)
+``github ``上传到GitHub Pages或者公共仓库搭配jsDelivr使用(不推荐)
 
 ``ali-oss`` 阿里云对象存储
 
@@ -97,9 +97,10 @@ fuc xxx.jpg xxx.js
 
 ``jsdelivr`` Boolean 是否使用jsdelivr服务，默认为true。如果为false, repo需要是GitHub Pages仓库
 
-> **jsDelivr** 是一个免费、开源的加速CDN公共服务, 可加速访问托管的项目目录或图片资源。任何开放的仓库都可以使用jsDelivr服务访问。
+> **jsDelivr** 是一个免费、开源的加速CDN公共服务, 可加速访问托管的项目目录或图片资源。任何开放的仓库都可以使用jsDelivr服务访问，我们可以托管网站或者blog的js,css和图片等资源，但是不推荐作为图床使用或者上传视频，毕竟维护良好的生态才能更好的发展。
 >
 > tip:如果在Github Pages中使用图片, 可以将图片单独放到一个公共仓库中通过jsDelivr提供的CDN服务来访问，以减少仓库大小和拉取代码耗时
+
 
 **ali-oss**
 
