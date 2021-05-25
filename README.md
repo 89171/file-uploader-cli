@@ -239,12 +239,6 @@ which fuc
 
 和macOS不同, 我们不需要使用软连接地址，可以直接在Command(命令)中填入'fuc'
 
-**其他**
-
-> Tip: 关于Typora主题，我们也可以定制自己的样式, Preferences(偏好设置)>Appearance(外观)>Theme(主题)>Open Theme Folder(打开主题文件夹), 在theme目录创建我们自己的css文件并编辑样式，重新打开Typora之后我们就可以在主题中选择自己定义的主题了。
->
-> 勾选General(通用)>Advanced Settings(高级设置)>Enable Debug(开启调试模式)之后，右键菜单会有“(Inspect Element)检查元素”的选项，可以更方便的调试样式
-
 
 
 其他参考：
