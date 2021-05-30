@@ -89,6 +89,7 @@ fuc xxx.jpg xxx.js
   "user": "*",
   "repo": "*",
   "path": "*",
+  "branch": "*",
   "jsdelivr": true
 }
 ```
@@ -100,6 +101,8 @@ fuc xxx.jpg xxx.js
 ``repo`` 需要上传的GitHub仓库名
 
 ``path`` 指定上传目录
+
+``branch`` 默认使用main分支
 
 ``jsdelivr`` Boolean 是否使用jsdelivr服务，默认为true。如果为false, repo需要是GitHub Pages仓库
 
@@ -227,18 +230,23 @@ remove configuration:
 ```bash
 # 1.全局安装
 npm install -g file-uploader-cli
-# 2.查看link所在地址
+# 2.查看node地址
+which node
+# 3.查看link所在地址
 which fuc
 ```
+拼接为nodejs调用
+```bash
+"/usr/local/bin/node" "/usr/local/bin/fuc"
+```
 
-复制路径并填写到Typora>Preferences(偏好设置)>Image(图像)>Command(命令)中，选择Image Uploader(上传服务)为Custom Command, 点击Test Uploader(验证图片上传选项)进行测试
+填写到Typora>Preferences(偏好设置)>Image(图像)>Command(命令)中，选择Image Uploader(上传服务)为Custom Command, 点击Test Uploader(验证图片上传选项)进行测试
 
 > Tip：设置上面的操作中Image(图片)的When Insert(插入图片时)参数为Upload image(上传), 当插入本地或者剪切板中图片时就会自动上传并替换为网络图片
 
 **Windows**
 
 和macOS不同, 我们不需要使用软连接地址，可以直接在Command(命令)中填入'fuc'
-
 
 
 其他参考：
