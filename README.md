@@ -102,7 +102,7 @@ fuc xxx.jpg xxx.js
 
 ``repo`` 需要上传的GitHub仓库名
 
-``path`` 指定上传目录
+``path`` 上传到的github项目中的指定目录
 
 ``branch`` 默认使用main分支，jsdelivr为true时有效
 
