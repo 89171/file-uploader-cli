@@ -1,6 +1,6 @@
 {
   "name": "file-uploader-cli",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Upload files from the command line",
   "main": "index.js",
   "bin": {
