@@ -96,15 +96,15 @@ fuc xxx.jpg xxx.js
 }
 ```
 
-``token`` 有repo权限的GitHub token(settings=>Developer settings=>Personal access tokens=>Generate new token)
+``token`` 有**repo权限**的GitHub token(settings=>Developer settings=>Personal access tokens=>Generate new token)
 
 ``user`` GitHub用户名
 
-``repo`` 需要上传的GitHub仓库名
+``repo`` 需要上传的GitHub仓库名(非仓库地址)
 
-``path`` 指定上传目录
+``path`` 指定上传目录(无需以'/'开头,需要上传到根目录则可以忽略)
 
-``branch`` 默认使用main分支，jsdelivr为true时有效
+``branch`` 默认使用main分支，jsdelivr为true时有效(branch分支指定的分支必须存在，如未指定则main分支需存在)
 
 ``jsdelivr`` Boolean 是否使用jsdelivr服务，默认为true。如果为false, repo需要是GitHub Pages仓库
 
