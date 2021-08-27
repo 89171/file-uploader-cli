@@ -1,4 +1,4 @@
-# file-uploader-cl
+# file-uploader-cli
 
 通过命令行上传文件，可以用做图床上传工具，也可以方便的[在Typora中使用](https://github.com/Iamxiaozhu/file-uploader-cli#%E5%9C%A8typora%E4%B8%AD%E4%BD%BF%E7%94%A8)。
 
@@ -102,7 +102,7 @@ fuc xxx.jpg xxx.js
 
 ``repo`` 需要上传的GitHub仓库名(非仓库地址)
 
-``path`` 指定上传目录(无需以'/'开头,需要上传到根目录则可以忽略)
+``path`` 上传到的github项目中的指定目录(无需以'/'开头,需要上传到根目录则可以忽略)
 
 ``branch`` 默认使用main分支，jsdelivr为true时有效(branch分支指定的分支必须存在，如未指定则main分支需存在)
 
